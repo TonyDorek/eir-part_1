@@ -60,6 +60,6 @@ Instructions on how to run the MATLAB scripts, Simulink and CoppeliaSIM model.
     - ingenuity.ttt (run the simulation)
     - dfl_model.slx (run the simulation)
     - Ingenuity.ttt (stop the simulation)
-    - dfl_plotting
+    - dfl_plotting.m
 
 Some graphs and plots about the robot trajectory can be appreciated both in the scene simulated in CoppeliaSIM and in MATLAB.
