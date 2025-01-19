@@ -10,10 +10,10 @@ Project delveloped for the Elective in Robotics (EiR) course, A.Y. 2024-2025
 
 ## Introduction
 
-The repository is structured in two subfolders:
+The purpose of this project is to develop a model in Simulink in order to control an UAV with coaxial helicopter dynamics (approximated to a quadrotor dynamics) trough Dynamic Feedback Linearization method. The output state is also partially sent to a CoppeliaSim scene (by means of some integration blocks) developed to simulate the motion of Ingenuity (coaxial helicopter drone built by NASA) in an ideal environment. The repository is structured in two subfolders:
 
-- **coppeliasim** -> It contains a scene developed in CoppeliaSim with a model of the Ingenuity drone taken from the web;
-- **matlab** -> It contains a set of scripts developed in MATLAB to initialize, produce and plot data for a Simulink model, together with an auxiliary script used to interface Simulink and CoppeliaSim via remote APIs.
+- **coppeliasim** -> It contains the scene developed in CoppeliaSim with a model of Ingenuity taken from the web;
+- **matlab** -> It contains a set of scripts developed in MATLAB to initialize, produce and plot data for the Simulink model, together with an auxiliary script used to interface Simulink and CoppeliaSim via remote APIs.
 
 ## Requirements
 
