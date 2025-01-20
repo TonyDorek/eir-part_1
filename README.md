@@ -1,5 +1,5 @@
 # Dynamic Feedback Linearizability of Ingenuity
-Project delveloped for the Elective in Robotics (EiR) course, A.Y. 2024-2025
+Project developed for the Elective in Robotics (EiR) course, A.Y. 2024-2025
 
 ## Table of Contents
 
@@ -10,9 +10,9 @@ Project delveloped for the Elective in Robotics (EiR) course, A.Y. 2024-2025
 
 ## Introduction
 
-The purpose of this project is to develop a model in Simulink in order to control an UAV with coaxial helicopter dynamics (approximated to a quadrotor dynamics) trough Dynamic Feedback Linearization method. The output state is also partially sent to a CoppeliaSim scene (by means of some integration blocks) developed to simulate the motion of Ingenuity (coaxial helicopter drone built by NASA) in an ideal environment. The repository is structured in two subfolders:
+The purpose of this project is the development of a model in Simulink in order to control an UAV with coaxial helicopter dynamics (approximated to a quadrotor dynamics) through Dynamic Feedback Linearization, and so complete a trajectory tracking task. The output state is also sent to a CoppeliaSim scene (by means of some integration blocks) developed to simulate the motion of Ingenuity (helicopter drone built by NASA) in an ideal environment. The repository is structured in two subfolders, each with specific sw components:
 
-- **coppeliasim** -> It contains the scene developed in CoppeliaSim with a model of Ingenuity taken from the web;
+- **coppeliasim** -> It contains the scene developed in CoppeliaSim with a model of Ingenuity taken from NASA website;
 - **matlab** -> It contains a set of scripts developed in MATLAB to initialize, produce and plot data for the Simulink model, together with an auxiliary script used to interface Simulink and CoppeliaSim via remote APIs.
 
 ## Requirements
@@ -45,21 +45,21 @@ Step-by-step instructions to set up the environment:
     ```bash
     git clone https://github.com/sunshineharry/VrepSimulink.git
     ```
-    And copy the auxiliary file matlab/aux/SetObjectPosition.m inside it from the project repository;
+    And copy the auxiliary file '*matlab/aux/SetObjectPosition.m*' inside it from the project repository;
 
-3. Move the support repository inside one of the MATLAB search path (or simply add its absolute path in the MATLAB list of paths);
+3. Move the support repository inside one of the MATLAB search paths (or simply add its absolute path in the MATLAB list of paths).
 
 ## Usage
 
-Instructions on how to run the MATLAB scripts, Simulink and CoppeliaSIM model.
+Instructions on how to execute the code:
 
-1. Open the CoppeliaSim scene ingenuity.ttt inside folder **coppeliasim** and also the **matlab** folder in MATLAB
+1. Open the CoppeliaSim file '*ingenuity.ttt*' in folder **coppeliasim** and also the **matlab** folder in MATLAB;
 
-2. Run the program in the following order:
-    - dfl_params.m
-    - ingenuity.ttt (run the simulation)
-    - dfl_model.slx (run the simulation)
-    - Ingenuity.ttt (stop the simulation)
+2. Run the programs in the following order:
+    - *dfl_params.m*
+    - *ingenuity.ttt* (start the simulation)
+    - *dfl_model.slx*
+    - *ingenuity.ttt* (stop the simulation)
     - dfl_plotting.m
 
-Some graphs and plots about the robot trajectory can be appreciated both in the scene simulated in CoppeliaSIM and in MATLAB.
+A couple of graphs and plots about the robot trajectory can be appreciated both in the scene simulated in CoppeliaSim and in MATLAB.
